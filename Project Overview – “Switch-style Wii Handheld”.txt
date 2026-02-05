@@ -1,0 +1,69 @@
+Project Overview – “Switch-style Wii Handheld”
+Our project is to take a Nintendo Wii motherboard, cut it down to its smallest functional size, and turn it into a handheld console similar to a Nintendo Switch. The system will have detachable controllers, a built-in screen, a battery for portable play, and a dock that connects to a Linux PC.
+How it Works – Big Picture
+Trimmed Wii motherboard: We’ll keep only the essential section with the CPU, GPU, RAM, and storage, making it small enough to fit in a handheld shell.
+Detachable controllers: Each half of the controller works wirelessly and has its own battery. When attached to the handheld, they charge via USB-C pogo pins. Even when attached, they’ll send input wirelessly, so the physical connection is only for charging.
+Controller bridge: Inside the handheld, there will be a small board that takes both halves’ inputs and combines them into one “virtual” GameCube-style controller, so the Wii sees it as a single gamepad.
+Screen & display switching: The handheld will have a screen for portable play. When docked, the Wii’s video output will be captured and sent over USB-C to the dock, which displays it on a Linux PC.
+Dock: The dock is basically a Linux computer that can:
+Show the Wii’s output like a capture card
+Transfer files to and from the Wii’s storage over the same USB-C cable
+Charge the handheld’s battery while docked
+Battery & cooling: The handheld will have its own rechargeable battery for around 3 hours of play. Cooling will be handled by a small fan and heat sink.
+
+
+Estimated Parts List and Costs
+Core Console (Wii System)
+    • Nintendo Wii donor console — $30–50
+    • Motherboard trimming tools — $15–25
+    • Power management system (PMS or DIY regulators) — $40–60
+    • Composite video breakout — $10–15
+    • Internal wiring and connectors — $10–15
+Subtotal: $105–165
+Display System (480i)
+    • 5–7 inch 480i TFT LCD (composite input) — $20–30
+    • Composite video driver board — $0–5
+    • Video signal amplifier/filter — $3–5
+    • Video switching circuit — $5–8
+Subtotal: $30–45
+Dock Video Interface
+    • Composite to USB capture device — $15–25
+    • USB-C data interface board — $15–25
+Subtotal: $30–50
+Detachable Controllers
+    • Microcontrollers (ESP32 or RP2040, two units) — $10–15
+    • Analog sticks and buttons — $20–30
+    • Controller batteries and charging circuits — $15–20
+    • Controller shells and mounting hardware — $10–15
+Subtotal: $55–80
+Controller Bridge (Handheld Internal)
+    • Bridge microcontroller — $5–10
+    • GameCube controller interface — $5–10
+    • USB-C pogo pins and connectors — $5–10
+Subtotal: $20–30
+Battery and Power System
+    • Main lithium-ion battery pack (8000–10000 mAh) — $25–40
+    • Battery management system — $8–12
+    • USB-C charging module — $10–15
+    • Power switches and indicators — $5–8
+Subtotal: $50–75
+Cooling System
+    • Copper heatsink — $8–12
+    • Low-profile fan — $5–8
+    • Thermal pads or paste — $5
+Subtotal: $18–25
+Dock (Linux PC)
+    • Linux mini PC or SBC — $60–120
+    • USB-C hub — $15–25
+    • Dock enclosure — $10–15
+Subtotal: $85–160
+Enclosure and Miscellaneous
+    • Handheld enclosure — $20–30
+    • Controller rails or magnets — $5–10
+    • EMI shielding tape — $5
+    • Debug and flashing tools — $10–15
+Subtotal: $40–60
+Estimated Total Cost
+    • Low-end build: $330–360
+    • Mid-range build: $380–430
+    • High-end build: $450–500
