@@ -1,6 +1,0 @@
-[2026-02-05 22:06:22] START copy src=test_data\usb_source dst=test_data\usbc_destination overwrite=False
-[2026-02-05 22:06:22] RESULT copied=0 skipped=1 errors=0
-[2026-02-05 22:06:22] END copy
-[2026-02-05 22:07:18] START copy src=test_data\usb_source dst=test_data\usbc_destination overwrite=False
-[2026-02-05 22:07:18] RESULT copied=0 skipped=1 errors=0
-[2026-02-05 22:07:18] END copy
