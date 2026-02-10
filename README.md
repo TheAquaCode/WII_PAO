@@ -1,6 +1,6 @@
-# PaoWii
+# WII_PAO
 Making the Wii work like a switch
-# PaoWii – CMPS 375 File Transfer Prototype
+# WII_PAO – CMPS 3750 File Transfer Prototype
 
 This project simulates a dock behavior:
 - A "USB drive" folder is copied to a "USB-C connected device" folder
