@@ -1,3 +1,4 @@
+
 #!/usr/bin/env python3
 """
 move_to_wiistorage.py
@@ -13,7 +14,7 @@ import sys
 # --- Configuration ---
 SOURCE_LABEL = "USBA"
 DEST_LABEL = "WIISTORAGE"
-MEDIA_BASE = "/media/pi"  # Default mount point on Raspberry Pi OS
+MEDIA_BASE = "/media"  # Default mount point on Raspberry Pi OS
 # ---------------------
 
 
@@ -94,3 +95,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
