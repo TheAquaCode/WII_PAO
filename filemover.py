@@ -13,7 +13,7 @@ import sys
 # --- Configuration ---
 SOURCE_LABEL = "USBA"
 DEST_LABEL = "WIISTORAGE"
-MEDIA_BASE = "/media"  # Default mount point on Raspberry Pi OS
+MEDIA_BASE = "/media/pi"  # Default mount point on Raspberry Pi OS
 # ---------------------
 
 
